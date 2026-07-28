@@ -1,0 +1,30 @@
+table{
+    text-align: center;
+    margin: 30px auto;
+    border-collapse: collapse;
+    width: 70%;
+    color: #333;
+}
+
+thead th{
+    height: 30px;
+    background-color: #b9a300;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+tbody tr{
+    height: 60px;
+}
+
+tfoot td{
+    background-color: #b9a300;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 750;
+}
+
+tbody tr:nth-child(even){
+    background-color: #e2e2e2;
+}
