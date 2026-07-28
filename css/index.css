@@ -5,4 +5,12 @@
     font-family: "Open Sans", sans-serif;
 }
 
-
+p{
+    margin: 2% auto;
+    font-size: 25px;
+}
+.img{
+    margin: 5%;
+    padding: 0 auto;
+    width: 60%;
+}
