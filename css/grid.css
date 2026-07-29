@@ -1,6 +1,57 @@
 .paises{
-    padding: 1.5rem;
-    font-size: 2.5rem;
-    color: rgb(0, 0, 0);
+    padding: 3rem 10rem;
     text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 9vh 50vh;
+    grid-template-areas: 
+                        "titulo titulo"
+                        "img    texto";
+}
+.titulo{
+    color: #fff;
+    grid-area: titulo;
+    font-size: 2.5rem;
+    padding: 1rem;
+    background-color: #b9a300;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.texto{
+    grid-area: texto;
+}
+.texto p{
+    padding: 1rem;
+    font-size: 40px;
+}
+.texto p::selection{
+    background-color: #ffef73;
+}
+.img{
+    grid-area: img;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+.img-1{
+    background-image: url(../assets/Muralha-da-china.jpg);
+
+}
+.img-2{
+    background-image: url(../assets/petra.jpg);
+}
+.img-3{
+    background-image: url(../assets/cristo-redentor.jpg);
+}
+.img-4{
+    background-image: url(../assets/Machu-Picchu.jpg);
+}
+.img-5{
+    background-image: url(../assets/Chichén-Itzá.jpg);
+}
+.img-6{
+    background-image: url(../assets/Coliseu.jpg);
+}
+.img-7{
+    background-image: url(../assets/Taj-Mahal.jpg);
 }
