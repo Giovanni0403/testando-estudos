@@ -7,48 +7,127 @@
 :root{
     --bg-color: #a18c00;
 }
-p{
-    margin: 2% auto;
-    font-size: 25px;
+
+/* CODIGO DO HEADER */
+
+#header{
+    min-height: 85vh;
+    padding: 25px 7%;
+    background:
+        linear-gradient(to bottom, rgba(0, 20, 45, 0.2), rgba(0, 10, 25, 0.9)),
+        url("../assets/maravilhas.jpg") center / cover no-repeat;
+
+    justify-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
 }
-.container-lista{
-    display: flex;
-    gap: 40px;    
-    align-items: flex-start; 
-    margin: 3%;
-    margin-left: 6%;
+
+#header h1{
+    color: white;
+    font-family: Georgia, serif;
+    font-size: clamp(45px, 7vw, 110px);
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    padding: 0;
 }
-.lista{
-    margin: 3rem;
-    padding: 3rem;
-    width: 40%;
-    height: 45vh;
-    padding: 20px 20px 20px 45px;
-    border-radius: 10px;
-    border: 1px solid black;
+#header h1 strong {
+    display: block;
+    color: #d8a934;
+    font-weight: normal;
 }
-h4{
-    margin: 2rem;
-    font-size: 25px;
-    color: #fff;
+
+#header h2{
+    margin-top: 25px;
+    padding: 0;
+    color: white;
+    font-size: clamp(14px, 1.3vw, 22px);
+    letter-spacing: 3px;
     text-transform: uppercase;
 }
-ul{
-  background-color: var(--bg-color);
+
+
+/* Lista de navegacao */
+.cabecalho__lista {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
 }
-ol{
-  background-color: var(--bg-color);
+
+/* Links do menu */
+.cabecalho__link{
+    color: #fdfdfd;
+    padding: 3rem;
+    font-weight: bold;
+    text-decoration: none;
 }
-ul li{
-    padding: 2%;
+
+.hero__conteudo {
+    min-height: 75vh;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 100px; 
+    text-align: center;
+    position: relative;
+    top: 80px;
 }
-li{
-    padding: 8px;
-    margin-bottom: 8px;
-    background-color: white;
-    border-radius: 5px;
+
+/* Logo principal do projeto */
+.cabecalho__logo-item{
+    display: flex;
+    gap: 15px;
+    color: #fff;
+    padding: 15px;
+    text-align: left;
+    font-size: 22px;
+    text-transform: uppercase;
 }
-li:hover{
-    background-color: #eeeeee;
-    cursor: pointer;
+
+
+.cabecalho__logo-item img {
+    width: 50%;
+    height: 10vh;
+}
+
+
+
+
+/* CODIGO DA TABELA */
+table{
+    text-align: center;
+    margin: 30px auto;
+    border-collapse: collapse;
+    width: 70%;
+    color: #333;
+}
+
+thead th{
+    height: 10vh;
+    background-color: #b9a300;
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+tbody tr{
+    height: 60px;
+}
+
+tfoot td{
+    background-color: #b9a300;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 750;
+}
+
+tbody tr:nth-child(even){
+    background-color: #e2e2e2;
 }
