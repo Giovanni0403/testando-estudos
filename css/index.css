@@ -11,31 +11,32 @@
 /* CODIGO DO HEADER */
 
 #header{
-    min-height: 85vh;
+    max-height: 95vh;
     padding: 25px 7%;
     background:
         linear-gradient(to bottom, rgba(0, 20, 45, 0.2), rgba(0, 10, 25, 0.9)),
-        url("../assets/maravilhas.jpg") center / cover no-repeat;
-
+        url("../assets/maravilhas.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     justify-items: center;
     text-align: center;
     font-weight: bold;
-    font-style: italic;
 }
 
 #header h1{
     color: white;
     font-family: Georgia, serif;
-    font-size: clamp(45px, 7vw, 110px);
-    font-weight: normal;
+    font-size: 55px;
+    font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 8px;
     padding: 0;
 }
 #header h1 strong {
     display: block;
-    color: #d8a934;
-    font-weight: normal;
+    color: #fbc12d;
+    font-size: 80px;
+    font-weight: bold;
 }
 
 #header h2{
@@ -48,7 +49,6 @@
 }
 
 
-/* Lista de navegacao */
 .cabecalho__lista {
     width: 100%;
     height: auto;
@@ -58,12 +58,17 @@
     list-style: none;
 }
 
-/* Links do menu */
 .cabecalho__link{
     color: #fdfdfd;
-    padding: 3rem;
+    padding: 5px;
     font-weight: bold;
     text-decoration: none;
+}
+
+.cabecalho__link:hover,
+.cabecalho__link.ativo {
+    color: #fbc12d;
+    border-bottom: 2px solid #fbc12d;
 }
 
 .hero__conteudo {
@@ -91,43 +96,70 @@
 
 
 .cabecalho__logo-item img {
-    width: 50%;
-    height: 10vh;
+    width: 60%;
+    height: 12vh;
+    margin-right: 10px;
+}
+.cabecalho__logo-item span{
+    margin-right: 10rem;
 }
 
-
-
-
-/* CODIGO DA TABELA */
-table{
-    text-align: center;
-    margin: 30px auto;
-    border-collapse: collapse;
-    width: 70%;
-    color: #333;
-}
-
-thead th{
-    height: 10vh;
-    background-color: #b9a300;
-    color: #fff;
-    font-size: 25px;
-    text-transform: uppercase;
+li strong{
+    display: block;
+    color: #fbc12d;
+    font-size: 30px;
     font-weight: bold;
 }
 
-tbody tr{
-    height: 60px;
-}
+/* CODIGO DO FOOTER  */
 
-tfoot td{
-    background-color: #b9a300;
+#footer{
+    display: grid;
+    grid-template-columns: 1.3fr 0.8fr 1.2fr;
+    gap: 55px;
+    padding: 40px 85px;
+    background-color: #20009e;
     color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    font-weight: 750;
+    padding: 2%;
+}
+.footer__logo{
+    padding: 35px;
+    padding-bottom: 0px;
+    display: flex;
+    gap: 15px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.footer__descricao{
+    padding-left: 35px; 
+    font-size: 18px;
 }
 
-tbody tr:nth-child(even){
-    background-color: #e2e2e2;
+.footer__coluna{
+    color: #d3d3d3;
+    line-height: 1.7;
+    padding: 15px;
+    border-left: 1px solid #385064;
+    padding-left: 45px;
+}
+
+.footer h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+.footer__link {
+    list-style: none;
+    padding: 15px 0;
+    margin: 25px 0 0;
+    color: #d3d3d3;
+    text-decoration: none;
+}
+.footer__link:hover {
+    color: #fbc12d;
+}
+footer p{
+    margin-top: 30px;
+    font-size: 16px;
 }
