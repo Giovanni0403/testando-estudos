@@ -1,0 +1,51 @@
+.sobre{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 10vh 40vh 10vh;
+    grid-template-areas: 
+                    "titulo imagem"
+                    "texto imagem"
+                    "botao imagem";
+}
+.sobre h3{
+    grid-area: titulo;
+    padding-left: 30px;
+    padding-top: 30px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.sobre p{
+    grid-area: texto;
+    padding: 30px 30px;
+    font-size: 1.25rem;
+}
+.sobre img{
+    grid-area: imagem;
+    width: 80%;
+    height: 80%;
+    margin: 3rem;
+    border-radius: 20px;
+}
+.botao{
+    grid-area: botao;
+    width: 150px;
+    height: 50px;
+    background-color: #180077;
+    margin: 0px 40px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.maravilhas h3{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 30px;
+}
