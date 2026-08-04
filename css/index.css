@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
 }
+html{
+    font-size: 62.5%;
+}
+
 :root{
     --bg-color: #a18c00;
 }
@@ -43,7 +47,7 @@
     margin-top: 25px;
     padding: 0;
     color: white;
-    font-size: clamp(14px, 1.3vw, 22px);
+    font-size: 2rem;
     letter-spacing: 3px;
     text-transform: uppercase;
 }
@@ -61,6 +65,7 @@
 .cabecalho__link{
     color: #fdfdfd;
     padding: 5px;
+    font-size: 1.6rem;
     font-weight: bold;
     text-decoration: none;
 }
@@ -114,6 +119,8 @@ li strong{
 /* CODIGO DO FOOTER  */
 
 #footer{
+    width: 100%;
+    height: auto;
     display: grid;
     grid-template-columns: 1.3fr 0.8fr 1.2fr;
     gap: 55px;
@@ -134,7 +141,7 @@ li strong{
 }
 .footer__descricao{
     padding-left: 35px; 
-    font-size: 18px;
+    font-size: 2rem;
 }
 
 .footer__coluna{
@@ -145,9 +152,9 @@ li strong{
     padding-left: 45px;
 }
 
-.footer h3 {
-    margin-top: 0;
-    font-size: 18px;
+.footer__coluna h3 {
+    margin: 10px;
+    font-size: 2rem;
 }
 .footer__link {
     list-style: none;
@@ -155,11 +162,12 @@ li strong{
     margin: 25px 0 0;
     color: #d3d3d3;
     text-decoration: none;
+    font-size: 2rem;
 }
 .footer__link:hover {
     color: #fbc12d;
 }
 footer p{
     margin-top: 30px;
-    font-size: 16px;
+    font-size: 2rem;
 }

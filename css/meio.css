@@ -9,43 +9,173 @@
 }
 .sobre h3{
     grid-area: titulo;
-    padding-left: 30px;
-    padding-top: 30px;
-    font-size: 30px;
+    padding-left: 3rem;
+    padding-top: 3rem;
+    font-size: 3.4rem;
     text-transform: uppercase;
 }
 .sobre p{
     grid-area: texto;
-    padding: 30px 30px;
-    font-size: 1.25rem;
+    padding: 3rem;
+    font-size: 2.15rem;
 }
 .sobre img{
     grid-area: imagem;
     width: 80%;
-    height: 80%;
+    height: 55vh;
     margin: 3rem;
-    border-radius: 20px;
+    border-radius: 10%;
 }
 .botao{
     grid-area: botao;
-    width: 150px;
-    height: 50px;
+    width: 30%;
+    height: 9vh;
     background-color: #180077;
     margin: 0px 40px;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     border: 2px solid #000;
-    border-radius: 10px;
+    border-radius: 10%;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
+    font-size: 1.7rem;
 }
 
-.maravilhas h3{
+/* CRIAÇÃO DO CSS PARA A SEÇÃO DAS MARAVILHAS */
+.maravilhas{
+    padding: 3rem 2rem;
+    background-color: #f8f8f8;
+}
+
+.maravilhas h2{
     text-align: center;
-    font-size: 40px;
+    font-size: 4rem;
     text-transform: uppercase;
     font-weight: 400;
-    margin-top: 30px;
+    margin: 0 0 2rem;
+    color: #172b4d;
+}
+
+.maravilhas__lista{
+    display: grid;
+    grid-template-columns: repeat(7, minmax(180px, 1fr));
+    gap: 12px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow-x: auto;
+    padding: 12px;
+}
+
+.maravilha__card {
+    position: relative;
+    min-width: 180px;
+    overflow: visible;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.maravilha__card img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 9px 9px 0 0;
+}
+
+.maravilha__numero{
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #e9ad24;
+    color: #172b4d;
+    font-weight: bold;
+    font-size: 1.25rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.maravilha__conteudo {
+    padding: 1rem 1.2rem;
+}
+
+.maravilha__conteudo h3 {
+    min-height: 52px;
+    margin: 0;
+    color: #172b4d;
+    font-size: 1.7rem;
+}
+
+.maravilha__conteudo p {
+    margin: 0.8rem 0 1.4rem;
+    color: #555;
+    font-size: 1.5rem;
+}
+
+.maravilha__conteudo a {
+    color: #173d74;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.maravilha__conteudo a:hover {
+    text-decoration: underline;
+}
+
+/* CRIAÇÃO DO CSS PARA A SEÇÃO DOS DADOS */
+.dados{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    margin: 3rem auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow-x: auto;
+    padding: 12px;
+}
+.dado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    min-height: 120px;
+    padding: 1rem;
+    border-right: 1px solid #ddd;
+}
+.dado:last-child {
+    border-right: none;
+}
+.dado i {
+    color: #172b4d;
+    font-size: 4rem;
+}
+
+.dado img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.dado strong {
+    display: block;
+    color: #172b4d;
+    font-size: 4rem;
+}
+
+.dado span {
+    display: block;
+    margin-top: 0.3rem;
+    color: #4b5563;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
 }
